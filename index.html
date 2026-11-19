@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corean Blossom | Korean Skincare</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fuentes de Google: Playfair Display (elegante) y Montserrat (moderna) -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -37,7 +36,7 @@
                         <span class="old-price">15.99 €</span>
                         <span class="new-price">12.50 €</span>
                     </div>
-                    <button class="btn-buy">Añadir al carrito</button>
+                    <button class="btn-buy" onclick="openModal('modal1')">Ver Detalles e Ingredientes</button>
                 </div>
             </article>
 
@@ -53,7 +52,7 @@
                         <span class="old-price">15.99 €</span>
                         <span class="new-price">12.50 €</span>
                     </div>
-                    <button class="btn-buy">Añadir al carrito</button>
+                    <button class="btn-buy" onclick="openModal('modal2')">Ver Detalles e Ingredientes</button>
                 </div>
             </article>
 
@@ -69,7 +68,7 @@
                         <span class="old-price">15.99 €</span>
                         <span class="new-price">12.50 €</span>
                     </div>
-                    <button class="btn-buy">Añadir al carrito</button>
+                    <button class="btn-buy" onclick="openModal('modal3')">Ver Detalles e Ingredientes</button>
                 </div>
             </article>
 
@@ -85,7 +84,7 @@
                         <span class="old-price">15.99 €</span>
                         <span class="new-price">12.50 €</span>
                     </div>
-                    <button class="btn-buy">Añadir al carrito</button>
+                    <button class="btn-buy" onclick="openModal('modal4')">Ver Detalles e Ingredientes</button>
                 </div>
             </article>
 
@@ -101,17 +100,103 @@
                         <span class="old-price">15.99 €</span>
                         <span class="new-price">12.50 €</span>
                     </div>
-                    <button class="btn-buy">Añadir al carrito</button>
+                    <button class="btn-buy" onclick="openModal('modal5')">Ver Detalles e Ingredientes</button>
                 </div>
             </article>
 
         </div>
     </main>
 
+    <!-- ========================================== -->
+    <!-- VENTANAS MODALES (POP-UPS) -->
+    <!-- ========================================== -->
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-body">
+                <img src="images/medicube-eye.jpg" alt="Medicube Eye Cream" class="modal-img">
+                <div class="modal-text">
+                    <h2>Medicube PDRN Pink Peptide Eye Cream</h2>
+                    <p><strong>Descripción:</strong> Crema para ojos innovadora que combina ingredientes poderosos para reducir las líneas finas, las ojeras y la hinchazón. Con textura ligera y no pegajosa, se absorbe rápidamente proporcionando hidratación intensa a la piel sensible.</p>
+                    <p class="ingredients"><strong>Ingredientes:</strong> Water, Glycerin, Dipropylene Glycol, Niacinamide, Caprylic/Capric Triglyceride, Pentaerythrityl Tetraethylhexanoate, Cetearyl Alcohol, Glycereth-26, Butylene Glycol Dicaprylate/Dicaprate, Bis-Behenyl/Isostearyl/Phytosteryl Dimer Dilinoleyl Dimer Dilinoleate, Cetearyl Olivate, Sorbitan Olivate, Propylene Glycol Dibenzoate, Pullulan, 1,2-Hexanediol, Glyceryl Stearate, Vinyl Dimethicone, Hydroxyacetophenone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Hydrogenated Lecithin, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sodium DNA, Polyisobutene, Butylene Glycol, Ethylhexylglycerin, Propanediol, Melia Azadirachta Leaf Extract, Adenosine, Melia Azadirachta Flower Extract, Curcuma Longa (Turmeric) Root Extract, Sorbitan Isostearate, Sorbitan Oleate, Caprylyl/Capryl Glucoside, Fragaria Chiloensis (Strawberry) Fruit Extract, Hedera Helix (Ivy) Leaf/Stem Extract, Cyanocobalamin, Citrus Nobilis (Mandarin Orange) Peel Extract, Retinol, Ocimum Sanctum Leaf Extract, Lespedeza Capitata Leaf/Stem Extract, Corallina Officinalis Extract, Sodium Hyaluronate, Caffeine, Coffea Arabica (Coffee) Seed Extract, Hydrolyzed Extensin, Hydrolyzed Hyaluronic Acid, Copper Tripeptide-1, Sodium Acetylated Hyaluronate, Acetyl Hexapeptide-8, Palmitoyl Pentapeptide-4, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-1.</p>
+                    <div class="modal-price">12.50 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-body">
+                <img src="images/joseon-serum.jpg" alt="Beauty of Joseon" class="modal-img">
+                <div class="modal-text">
+                    <h2>Beauty of Joseon Revive Eye Serum</h2>
+                    <p><strong>Descripción:</strong> Un sérum para el contorno de los ojos que, al combinar extracto de ginseng y retinal, ayuda a mejorar el aspecto de las arrugas que aparecen en esta zona en pieles sensibles.</p>
+                    <p class="ingredients"><strong>Ingredientes:</strong> Aqua, Panax Ginseng Root Extract, Glycerin, Dipropylene Glycol, Caprylic/Capric Triglyceride, 1,2-Hexanediol, Butylene Glycol Dicaprylate/Dicaprate, Niacinamide, Pentaerythrityl Tetraethylhexanoate, Cetearyl Alcohol, Cetearyl Olivate, Sorbitan Olivate, Butylene Glycol, Hydrogenated Lecithin, Carbomer, Glyceryl Stearate, Tromethamine, Macadamia Ternifolia Seed Oil, Ethylhexylglycerin, Adenosine, Cholesterol, Dextrin, Polyglyceryl-10 Oleate, Theobroma Cacao (Cocoa) Extract, Disodium EDTA, Brassica Campestris (Rapeseed) Sterols, Phytosteryl/Behenyl/Octyldodecyl Lauroyl Glutamate, Retinal, Silica, Aluminum/Magnesium Hydroxide Stearate, Sodium Hyaluronate, Tocopherol, Ceramide NP, Potassium Cetyl Phosphate, Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate, Palmitoyl Tripeptide-5.</p>
+                    <div class="modal-price">12.50 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-body">
+                <img src="images/medicube-jelly.jpg" alt="Medicube Jelly Cream" class="modal-img">
+                <div class="modal-text">
+                    <h2>Medicube Collagen Jelly Cream</h2>
+                    <p><strong>Descripción:</strong> Crema en textura gel que redefine los contornos del rostro, mejora la elasticidad y aporta un acabado luminoso tipo "Korean Glass Glow". Enriquecida con colágeno hidrolizado, niacinamida, esqualano vegetal y elastina hidrolizada. Dermatológicamente testada, libre de siliconas, colorantes artificiales y fragancias.</p>
+                    <p class="ingredients"><strong>Ingredientes:</strong> Water, Propanediol, Dipropylene Glycol, Butylene Glycol, Methylpropanediol, Diethoxyethyl Succinate, Ethoxydiglycol, Ammonium Acryloyldimethyltaurate/Beheneth-25 Methacrylate Crosspolymer, Trehalose, Niacinamide, 1,2-Hexanediol, Water, Chlorella Vulgaris Extract, Glucose, Fructooligosaccharides, Fructose, Butylene Glycol, 1,2-Hexanediol, Ethylhexylglycerin, Propanediol, Polyglyceryl-10 Isostearate, Polyglyceryl-10 Oleate, Carbomer, Tromethamine, Water, Butylene Glycol, 1,2-Hexanediol, Cynanchum Atratum Extract, Althaea Rosea Flower Extract, Ethylhexylglycerin, Ethylhexylglycerin, Tocopherol, Xanthan Gum, Adenosine, Sodium Phytate, Fragrance(Parfum), Water, 1,2-Hexanediol, Hydrolyzed Collagen, Cyanocobalamin, Hydrolyzed Collagen, Pullulan, Collagen, Water, Glycerin, 1,2-Hexanediol, Soluble Collagen, Squalane, Hydroxypropyltrimonium Hyaluronate, Water, Butylene Glycol, 1,2-Hexanediol, Solanum Lycopersicum (Tomato) Fruit Extract, Wine Extract, Salmon Egg Extract, Spinacia Oleracea (Spinach) Leaf Extract, Vaccinium Angustifolium (Blueberry) Fruit Extract, Brassica Oleracea Italica (Broccoli) Extract, Bertholletia Excelsa Seed Extract, Allium Sativum (Garlic) Bulb Extract, Camellia Sinensis Seed Extract, Avena Sativa (Oat) Kernel Extract, Water, Butylene Glycol, 1,2-Hexanediol, Sodium DNA, Water, 1,2-Hexanediol, Soluble Proteoglycan, Ethylhexylglycerin, Water, 1,2-Hexanediol, Hydrolyzed Elastin.</p>
+                    <div class="modal-price">12.50 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+            <div class="modal-body">
+                <img src="images/medicube-capsule.jpg" alt="Medicube Capsule Cream" class="modal-img">
+                <div class="modal-text">
+                    <h2>Medicube TXA Niacinamide Capsule Cream</h2>
+                    <p><strong>Descripción:</strong> Crema hidratante innovadora y adaptable. Formulada para tratar el tono desigual, manchas y cicatrices de acné. Contiene 99% de ácido tranexámico y 5% de niacinamida. Los ingredientes activos encapsulados se liberan al aplicarse. Contiene ceramidas y ácido hialurónico.</p>
+                    <p class="ingredients"><strong>Ingredientes:</strong> Water, Glycerin, Niacinamide (50,000 Ppm), Methylpropanediol, Propanediol, 1,2-hex-Anediol, Dipropylene Glycol, Caprylic/capric Triglyceride, Glyceryl Glucoside, Butylene Glycol, Arginine, Ethylhexyl Palmitate, Carbomer, Cetearyl Alcohol, Cetearyl Olivate, Sor-Bitan Olivate, C12-14 Alketh-12, Ammonium Acryloyldimethyltaurate/vp Copolymer, Simethicone, Ethylhexylglycerin, Melia Azadirachta Flower Extract, Melia Azadirachta Leaf Extract, Adenosine, Polyacrylate-13, Disodium Edta, Cyanocobalamin, Triethyl Ci-Trate, Betaine, Polyisobutene, Glyceryl Stearate, Hydrolyzed Sclerotium Gum, Tranexamic Acid, Abelmoschus Esculentus (Okra) Fruit Extract, Panthenol, Coccinia Indica Fruit Extract, Corallina Officinalis Extract, Polysorbate 20, Sorbitan Isostearate, Glutathione, Fragaria Vesca (Strawberry) Fruit Extract, Castanea Crenata (Chestnut) Shell Extract, Citrus Junos Peel Extract, Betula Platyphylla Japonica Bark/leaf Extract, Ricinus Communis (Castor) Seed Oil, Bisabolol, Ferulic Acid, Cymbopogon Citratus Leaf Oil, Illici-Um Verum (Anise) Fruit/seed Oil, Octyldodecanol, Hydrolyzed Hyaluronic Acid, 3-0-ethyl Ascorbic Acid, Sodium Hyaluronate, Alpha-arbutin, Hydrogenated Lecithin, Ceramide Np, Hydroxypropyltrimonium Hyaluronate, Caprylyl Glycol, Sodium Acetylated Hyaluronate, Hyaluronic Acid, Sodium Hyaluronate Crosspolymer, Hydrolyzed Sodium Hyaluronate, Potassium Hyaluronate.</p>
+                    <div class="modal-price">12.50 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+            <div class="modal-body">
+                <img src="images/althea-serum.jpg" alt="Dr. Althea Serum" class="modal-img">
+                <div class="modal-text">
+                    <h2>Dr. Althea Vitamin C Boosting Serum</h2>
+                    <p><strong>Descripción:</strong> Sérum facial iluminador que revitaliza la piel desde adentro. Enriquecido con Agua de Hippophae Rhamnoides (63%) y Ácido Tranexámico. Más suave que los sueros tradicionales de vitamina C, ideal para pieles sensibles. Contiene 8 tipos de ácido hialurónico y agua de Centella Asiatica para calmar.</p>
+                    <p class="ingredients"><strong>Ingredientes:</strong> Hippophae Rhamnoides Water, Centella Asiatica Leaf Water, Niacinamide, Butylene Glycol, 1,2-Hexanediol, Dipropylene Glycol, Water(Aqua), Methyl Gluceth-20, Methylpropanediol, Betaine, Tranexamic Acid, Glycerin, Pentylene Glycol, Propanediol, Hydroxy ethyl Urea, Laminaria Japonica Extract, Eclipta Prostrata Leaf Extract, Ficus Carica (Fig) Fruit Extract, Centella Asiatica Extract, Hydrogenated Lecithin, Sodium Hyaluronate, Carbomer, 3-0-Ethyl Ascorbic Acid, C12-14 Pareth-12, Ammonium Acryloyldimethyltaurate/VP Copolymer, Xanthan Gum, Tromethamine, Panthenol, Ethylhexylglycerin, Adenosine, Disodium EDTA, Fructooligosaccharides, Beta-Glucan, Ascorbic Acid, Hydrolyzed Hyaluronic Acid, Ceramide NP, Alpha-Arbutin, Tocopherol, Bifida Ferment Lysate, Bisabolol, Ubiquinone, Hydroxydecyl Ubiquinone, Sodium Acetylated Hyaluronate.</p>
+                    <div class="modal-price">12.50 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2026 Corean Blossom. Belleza auténtica de Corea.</p>
     </footer>
 
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
